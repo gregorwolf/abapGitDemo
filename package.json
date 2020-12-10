@@ -1,0 +1,14 @@
+{
+  "license": "Apache License",
+  "scripts": {
+    "test": "npm run abaplint",
+    "abaplint": "abaplint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregorwolf/abapGitDemo.git"
+  },
+  "devDependencies": {
+    "@abaplint/cli": "^2.62.0"
+  }
+}
