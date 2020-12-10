@@ -1,22 +1,22 @@
-class ZCL_ABAPGITDEMOSUBPACKAGE definition
-  public
-  create public .
+CLASS zcl_abapgitdemosubpackage DEFINITION
+  PUBLIC
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 
-  methods GET_HELLO_WORLD
-    returning
-      value(RV_HELLO_WORLD) type STRING .
+    METHODS get_hello_world
+      RETURNING
+        VALUE(rv_hello_world) TYPE string .
 ENDCLASS.
 
 
 
-CLASS ZCL_ABAPGITDEMOSUBPACKAGE IMPLEMENTATION.
+CLASS zcl_abapgitdemosubpackage IMPLEMENTATION.
 
 
-  METHOD get_hello_world.
+  METHOD get_hello_WORLD.
     rv_hello_world = 'Hello World'.
   ENDMETHOD.
 ENDCLASS.
