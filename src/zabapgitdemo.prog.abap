@@ -1,16 +1,16 @@
 REPORT zabapgitdemo.
 
-PARAMETERS: p_lang TYPE BU_LANGU_CORR DEFAULT sy-langu.
+PARAMETERS: p_lang TYPE bu_langu_corr DEFAULT sy-langu.
 
 START-OF-SELECTION.
-LOG-POINT ID ZABAPGITDEMO FIELDS p_lang.
+  LOG-POINT ID zabapgitdemo FIELDS p_lang.
 
-WRITE: / 'Hello World'.
+  WRITE: / 'Hello World'.
 
-BREAK-POINT ID ZABAPGITDEMO.
+  BREAK-POINT ID zabapgitdemo.
 
-ASSERT id ZABAPGITDEMO
-FIELDS p_lang
-CONDITION p_lang = 'E'.
+  ASSERT ID zabapgitdemo
+    FIELDS p_lang
+    CONDITION p_lang = 'E'.
 
-WRITE: / p_lang.
+  WRITE: / p_lang.
